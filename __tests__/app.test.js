@@ -3,6 +3,7 @@ const setup = require('../data/setup');
 const request = require('supertest');
 const app = require('../lib/app');
 
+//mock thing
 jest.mock('../lib/services/github');
 
 describe('backend-express-template routes', () => {
