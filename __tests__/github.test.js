@@ -31,4 +31,16 @@ describe('backend-express-template routes', () => {
     });
     // console.log('res.body', res.body);
   });
+
+  it('#DELETE signs out a user', async () => {
+    const res = await request
+      .agent(app)
+      .delete('/api/v1/github/callback?code=42');
+    // console.log('res.body', res.body);
+
+    expect(res.body).toEqual({
+      success: true,
+      message: 'Signed out successfully!',
+    });
+  });
 });

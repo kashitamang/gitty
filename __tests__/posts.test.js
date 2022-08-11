@@ -34,7 +34,7 @@ describe('backend-express-template routes', () => {
     const agent = request.agent(app);
     await agent.get('/api/v1/github/callback?code=42').redirects(1);
     const res = await agent.post('/api/v1/posts');
-    console.log('this is the post response.body', res.body);
+    // console.log('this is the post response.body', res.body);
 
     expect(res.status).toBe(200);
 
@@ -53,7 +53,7 @@ describe('backend-express-template routes', () => {
   //       'This is the longest post we have and it isnt going to pass the test. This is the longest post we have and it isnt going to pass the test. This is the longest post we have and it isnt going to pass the test. This is the longest post we have and it isnt going to pass the test.',
   //   });
 
-  //   console.log('this is the post response.body', res.body);
+  //   console.log('lengthy response body', res.body);
 
   //   expect(res.status).toBe(500);
 
