@@ -35,8 +35,8 @@ describe('backend-express-template routes', () => {
   it('#DELETE signs out a user', async () => {
     const res = await request
       .agent(app)
-      .delete('/api/v1/github/callback?code=42');
-    // console.log('res.body', res.body);
+      .delete('/api/v1/github');
+    console.log('res.body', res.body);
 
     expect(res.body).toEqual({
       success: true,
