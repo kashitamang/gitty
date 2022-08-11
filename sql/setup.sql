@@ -17,7 +17,7 @@ CREATE TABLE posts (
 );
 
 INSERT INTO posts (content) VALUES 
-  ('the tv is very good, the word is very bad: the 2022 story'),
+  ('the tv is very good, the world is very bad: the 2022 story'),
   ('Guy on jeopardy was just introduced as a stay at home uncle'),
   ('email was a mistake. we shouldnt be able to communicate this quickly. if my husband died at Gettysburg, thats not my business until next spring.'),
   ('a shrimp? am i to accept, as gods own truth, that the seas very own abominable and chittering roach, was the one who took wok into hand and fried this rice?'),
