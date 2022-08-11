@@ -2,7 +2,7 @@ const pool = require('../lib/utils/pool');
 const setup = require('../data/setup');
 const request = require('supertest');
 const app = require('../lib/app');
-const { agent } = require('supertest');
+// const { agent } = require('supertest');
 
 //mock user
 jest.mock('../lib/services/github');
